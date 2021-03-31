@@ -42,7 +42,7 @@ final class PullFromSource
 
     public function title(): string
     {
-        return 'Indexing...';
+        return sprintf('Indexing... %s', Cache::get('scout_import_last_id', 0));
     }
 
     /**
